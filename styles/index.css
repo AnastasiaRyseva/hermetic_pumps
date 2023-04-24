@@ -1,0 +1,14 @@
+@import './vars.css';
+@import './fonts.css';
+@import './global.css';
+@import './components/header.css';
+@import './components/main.css';
+@import './components/products.css';
+@import './components/about_company.css';
+@import './components/production.css';
+@import './components/contacts.css';
+@import './components/news_blog.css';
+@import './components/news_page_v2.css';
+@import './components/news_page.css';
+@import './components/allnews_mobile.css';
+@import './components/footer.css';

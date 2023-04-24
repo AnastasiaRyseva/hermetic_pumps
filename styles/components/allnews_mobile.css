@@ -1,0 +1,24 @@
+.all-news {
+    padding-left: 35px;
+    padding-bottom: 20px;
+}
+.all-news--item p {
+    color: rgba(60, 60, 59, 0.8);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    margin-bottom: 4px;
+}
+.all-news--item {
+    list-style-type: disc;
+    margin-bottom: 21px;
+}
+.all-news--link {
+    color: var(--linksColor);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+}
+.blue-color {
+    color: var(--linksColor);
+}

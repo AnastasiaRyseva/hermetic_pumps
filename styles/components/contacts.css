@@ -1,0 +1,127 @@
+.contacts {
+    padding-top: 25px;
+}
+.contacts-wrapper {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 0 16px;
+}
+.contacts-group {
+    display: flex;
+    justify-content: center;
+    gap: 85px;
+    align-items: flex-start;
+}
+.map {
+    display: flex;
+    justify-content: center;
+    margin-top: 54px;
+    padding-bottom: 70px;
+}
+.contacts-title {
+    color: var(--titlesColor);
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 44px;
+    margin: 48px 0;
+    font-family: 'MontserratBold', sans-serif;
+}
+.contacts-company {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 36px;
+    color: rgba(60, 60, 59, 0.8);
+}
+.contacts-company--name {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 44px;
+    color: var(--titlesColor);
+    font-family: 'MontserratBold', sans-serif;
+}
+.contacts-group--scheme img{
+    width: 500px;
+    min-width: 355px;
+    margin-top: 48px;
+    height: 416px;
+}
+.contacts-item {
+    display: flex;
+    align-items: center;
+    gap: 26px;
+    margin-top: 25px;
+    font-size: 22px;
+    line-height: 36px;
+}
+.contacts-item div:first-child {
+    width: 40px;
+    text-align: center;
+}
+.contacts-item--mail {
+    color: rgba(50, 147, 252, 1);
+}
+.contacts-item--boldText {
+    color: var(--titlesColor);
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 36px;
+    font-family: 'MontserratBold', sans-serif;
+}
+.contacts-item--site {
+    color: var(--linksColor);
+}
+.download-scheme {
+    color: var(--colorBtn);
+    border: 1px solid var(--colorBtn);
+    border-radius: 48px;
+    max-width: 260px;
+    padding: 15px 15px 15px 27px;
+    text-align: center;
+}
+.download-scheme a {
+    position: relative;
+}
+.download-scheme a::before {
+    content: url('../../images/Arrow_downl.svg');
+    position: absolute;
+    top: 3px;
+    left: -17px;
+}
+@media (max-width: 900px) {
+    .contacts-group {
+        flex-direction: column;
+        align-items: baseline;
+    }
+    .contacts-group--scheme img{
+        min-width: 200px;
+        margin-top: 0;
+        height: auto;
+    }
+    .contacts-group {
+        gap: 35px;
+    }
+}
+@media (max-width: 605px) {
+    .contacts-title {
+        font-size: 32px;
+        line-height: 36px;
+        margin: 48px 0 12px;
+    }
+    .contacts-company {
+        line-height: 22px;
+    }
+    .contacts-company--name {
+        font-size: 22px;
+        line-height: 32px;
+    }
+    .contacts-item {
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .contacts-item div:first-child{
+        display: none;
+    }
+    .download-scheme {
+        max-width: 100%;
+    }
+}

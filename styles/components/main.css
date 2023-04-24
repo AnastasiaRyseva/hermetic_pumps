@@ -1,0 +1,332 @@
+.main {
+    background: var(--mainBackColor);
+}
+.main-content {
+    max-width: 100%;
+    background-image: url(../../images/main_bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 193px;
+    padding-top: 96px;
+}
+.main-content--text {
+    max-width: 1320px;
+}
+.main-title {
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 52px;
+    text-align: left;
+    max-width: 829px;
+    color: #fff;
+    font-family: 'MontserratBold', sans-serif;
+}
+.main-descr {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    text-align: left;
+    color: #fff;
+    max-width: 385px;
+    margin-top: 24px;
+}
+
+.advantages {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 96px;
+    gap: 32px;
+}
+.advantages-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+    width: 264px;
+    gap: 12px;
+    padding: 18px 25px;
+    border-radius: 16px;
+    height: 138px;
+}
+.advantages-item p {
+    font-size: 12px;
+    line-height: 18px;
+}
+.advantages-item--icon {
+    width: 40px;
+    height: 42px;
+}
+.special-icon {
+    height: 55px;
+    width: 60px;
+}
+.about-company {
+    max-width: 1476px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 16px;
+    margin-top: -120px;
+    position: relative;
+    z-index: 1;
+}
+.decor1, .decor2 {
+    position: absolute;
+}
+.decor1 {
+    top: 30px;
+    left: 0;
+    z-index: 5;
+}
+.decor2 {
+    top: 50px;
+    right: 0;
+}
+.about-company {
+    overflow: hidden;
+}
+.about-company--text {
+    padding-top: 96px;
+    padding-left: 99px;
+}
+.about-company--title {
+    color: var(--titlesColor);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 44px;
+    margin-bottom: 24px;
+    max-width: 700px;
+    font-family: 'MontserratBold', sans-serif;
+}
+.about-company--descr {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 36px;
+    max-width: 950px;
+    margin-bottom: 24px;
+    color: var(--descrColor);
+    position: relative;
+}
+/* .swiper-wrapper{ flex-direction: unset !important; } */
+.text-decor1{
+    position: absolute;
+    top: 40%;
+    right: -274px;
+}
+.text-decor2 {
+    position: absolute;
+    top: 80%;
+    right: -370px;
+}
+.text-decor3 {
+    position: absolute;
+    top: 60%;
+    right: -363px;
+}
+.text-decor4 {
+    position: absolute;
+    top: 37%;
+}
+.text-decor5 {
+    position: absolute;
+    top: 58%;
+    right: -117px;
+}
+.hidden {
+    display: none;
+    position: relative;
+}
+.hidden-decor {
+    position: absolute;
+}
+.showMore {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+    text-align: center;
+    background-color: var(--colorBtn);
+    color: #fff;
+    width: 177px;
+    padding: 15px 11px;
+    border-radius: 48px;
+}
+.gallery {
+    display: flex;
+    gap: 32px;
+    margin: 72px 0;
+    justify-content: center;
+}
+.gallery-mobile--img {
+    display: none;
+}
+.company-character {
+    display: flex;
+    justify-content: center;
+    gap: 140px;
+    align-items: center;
+    padding: 0 90px 79px;
+}
+.character--item {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 36px;
+    margin-bottom: 16px;
+    color: var(--titlesColor);
+    display: flex;
+    flex-direction: column;
+    font-family: 'MontserratBold', sans-serif;
+}
+.character--text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--descrColor);
+    max-width: 295px;
+}
+.decor-line {
+    width: 100%;
+    height: 1px;
+    background-color: var(--linksColor);
+    margin-top: 79px;
+    margin-bottom: 24px;
+}
+.partners {
+ padding: 0 90px;
+}
+.partners-counter {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 36px;
+    color: var(--titlesColor);
+}
+.partners-list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 26px;
+    align-items: center;
+}
+
+@media (max-width: 1190px) {
+    .advantages {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        justify-items: center; 
+        align-items: center;
+    }
+}
+@media (max-width: 930px) {
+    .company-character {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .about-company--text {
+        padding-top: 20px;
+        padding-left: 30px;
+    }
+    .decor1, .decor2 {
+        opacity: 70%;
+    }
+}
+@media (max-width: 605px) {
+    .showMore {
+        display: none;
+    }
+    .partners {
+        padding: 0 10px;
+    }
+    .main {
+        background: #fff;
+    }
+    .main-content {
+        padding-bottom: 185px;
+    }
+    .main-content--text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .main-title {
+        font-size: 32px;
+        line-height: 36px;
+        max-width: 287px;
+    }
+    .main-descr {
+        font-size: 16px;
+        line-height: 22px;
+        max-width: 287px;
+    }
+    .advantages {
+        display: flex;
+        flex-direction: column;
+    }
+    .advantages-item {
+        flex-direction: row;
+        width: 288px;
+        height: 78px;
+        text-align: left;
+    }
+    .advantages-item p{
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .about-company--title {
+        font-size: 26px;
+        line-height: 32px;
+    }
+    .about-company--descr {
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .gallery {
+        margin: 48px 0;
+    }
+    .gallery--item {
+        display: none;
+    }
+    .gallery-mobile--img {
+        display: block;
+    }
+    .character--item {
+        font-size: 16px;
+        line-height: 36px;
+    }
+    .character--text {
+        font-size: 14px;
+        line-height: 24px;
+        max-width: 100%;
+    }
+    .partners-counter  {
+        font-size: 18px;
+        line-height: 30px;
+    }
+    .mobile-none {
+        display: none;
+    }
+    .partners-counter {
+        font-size: 16px;
+    }
+    .company-character {
+        padding: 20px;
+    }
+    .decor2 {
+        top: -12px;
+        right: -44px;
+        width: 178px;
+    }
+    .about-company--text {
+        padding-left: 16px;
+    }
+}
+@media (max-width: 290px) {
+    .advantages-item {
+        width: 250px;
+    }
+}

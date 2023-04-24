@@ -1,0 +1,107 @@
+.blog-news--img img, .page-main--img img{
+    max-width: 513px;
+}
+.page-body--text {
+    margin-top: 36px;
+}
+.blog-page {
+    padding-top: 48px;
+    padding-bottom: 72px;
+}
+.page-body {
+    display: flex;
+    margin-top: 52px;
+}
+.page-body--btn {
+    position: relative;
+    background-color: transparent;
+    border: 1px solid var(--linksColor);
+    color: var(--linksColor);
+    padding: 15px 24px 15px 48px;
+    border-radius: 48px;
+}
+.page-body--btn::after {
+    position: absolute;
+    content: url(../../images/Arrow_left.svg);
+    top: 16px;
+    left: 16px;
+}
+.page-body--title {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 44px;
+    color: var(--titlesColor);
+    font-family: 'MontserratBold';
+    margin-top: 10px;
+}
+.page-body--text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: rgba(60, 60, 59, 0.8);
+}
+.page-main--title {
+    margin-top: 48px;
+}
+.page-main {
+    display: flex;
+    margin: 48px 0;
+}
+.page-main--img {
+    margin-top: 48px;
+}
+.page-main--title {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 32px;
+    color: var(--titlesColor);
+    font-family: 'MontserratBold';
+}
+@media (max-width:870px) {
+    .page-body, .page-main {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .blog-news--img img, .page-main--img img{
+        max-width: 100%;
+    }
+}
+@media (max-width: 605px) {
+    .page-body--title {
+        font-size: 26px;
+        line-height: 32px;
+    }
+    .page-body--text {
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .blog-page {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 14px;
+    }
+    .blog {
+        padding-top: 0;
+    }
+    .padding {
+        padding-top: 8px;
+    }
+    .padding a::before{
+        padding-top: 8px;
+    }
+    .page-body--btn {
+        width: 100%;
+        text-align: center;
+    }
+    .page-body--btn::after {
+        left: 50px;
+    }
+    .margin-style {
+        margin: 0;
+    }
+    .padding-style {
+        padding-top: 24px;
+    }
+}
