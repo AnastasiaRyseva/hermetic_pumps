@@ -21,6 +21,7 @@
     display: flex;
     justify-content: space-around;
     padding-top: 44px;
+    position: relative;
 }
 .footer-title {
     font-size: 22px;
