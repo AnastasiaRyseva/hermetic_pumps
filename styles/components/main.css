@@ -28,10 +28,10 @@
 .main-descr {
     font-size: 16px;
     font-weight: 500;
-    line-height: 22px;
+    line-height: 36px;
     text-align: left;
     color: #fff;
-    max-width: 385px;
+    max-width: 357px;
     margin-top: 24px;
 }
 
@@ -151,8 +151,8 @@
     text-align: center;
     background-color: var(--colorBtn);
     color: #fff;
-    width: 177px;
-    padding: 15px 11px;
+    width: 223px;
+    padding: 15px 24px;
     border-radius: 48px;
 }
 .gallery {
@@ -166,7 +166,7 @@
 }
 .company-character {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     gap: 140px;
     align-items: center;
     padding: 0 90px 79px;
@@ -196,8 +196,14 @@
     margin-bottom: 24px;
 }
 .partners {
- padding: 0 90px;
+    padding: 0 80px 80px;
 }
+
+.partners-wrapper {
+    align-items: baseline;
+    gap: 50px;
+}
+
 .partners-counter {
     font-size: 22px;
     font-weight: 400;
@@ -210,7 +216,14 @@
     margin-top: 26px;
     align-items: center;
 }
-
+@media (max-width: 1480px) {
+    .about-company {
+        margin: -120px 30px 0;
+    }
+    .gallery {
+        margin: 72px 96px;
+    }
+}
 @media (max-width: 1190px) {
     .advantages {
         display: grid;
@@ -222,8 +235,8 @@
 }
 @media (max-width: 930px) {
     .company-character {
-        flex-wrap: wrap;
         gap: 20px;
+        padding: 0 30px;
     }
     .about-company--text {
         padding-top: 20px;
@@ -232,19 +245,31 @@
     .decor1, .decor2 {
         opacity: 70%;
     }
+    .gallery {
+        margin: 72px 30px;
+    }
 }
 @media (max-width: 605px) {
+    .partners-wrapper {
+        align-items: center;
+        gap: 2px;
+    }
+    .company-character {
+        flex-wrap: wrap;
+    }
     .showMore {
         display: none;
     }
     .partners {
-        padding: 0 10px;
+        padding: 0 10px 50px;
     }
     .main {
         background: #fff;
     }
     .main-content {
-        padding-bottom: 185px;
+        padding-top: 46px; 
+        padding-bottom: 0;
+        background-position: right;
     }
     .main-content--text {
         display: flex;
@@ -261,10 +286,13 @@
         font-size: 16px;
         line-height: 22px;
         max-width: 287px;
+        margin-top: 12px;
     }
     .advantages {
         display: flex;
         flex-direction: column;
+        margin-top: 48px;
+        margin-bottom: 50px;
     }
     .advantages-item {
         flex-direction: row;
@@ -276,7 +304,12 @@
         font-size: 12px;
         line-height: 18px;
     }
-
+    .about-company {
+        margin: 0;
+    }
+    .about-company--text {
+        padding-top: 48px;
+    }
     .about-company--title {
         font-size: 26px;
         line-height: 32px;
@@ -310,6 +343,10 @@
     .mobile-none {
         display: none;
     }
+    .mobile-v {
+        margin-top: 48px;
+        margin-bottom: 12px;
+    }
     .partners-counter {
         font-size: 16px;
     }
@@ -317,7 +354,7 @@
         padding: 20px;
     }
     .decor2 {
-        top: -12px;
+        top: 4px;
         right: -44px;
         width: 178px;
     }

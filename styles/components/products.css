@@ -15,7 +15,7 @@
     max-width: 356px;
 }
 .sidebar-list {
-   padding-top: 8px;
+   padding-top: 48px;
    padding-bottom: 50px;
    
 }
@@ -27,7 +27,7 @@
     color: var(--descrColor);
 }
 .sidebar-list--item li {
-    margin-bottom: 8px;
+    margin-bottom: 12px;
 }
 .stages {
     margin-bottom: 8px;
@@ -42,12 +42,16 @@
     align-items: center;
 }
 .sidebar-list--title p {
-    padding-right: 106px;
+    padding-right: 34px;
 }
 .sidebar-list--route {
     display: none;
     width: 9px;
     height: 16px;
+}
+.sidebar-link--text {
+    display: block;
+    padding-left: 90px;
 }
 .rotate {
     transform: rotate(90deg)
@@ -62,6 +66,18 @@
     line-height: 24px;
     text-align: center;
     padding-left: 90px;
+}
+.name-padding {
+    padding-left: 90px;
+    padding-right: 5px;
+    color: var( --linksColor);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: start;
+}
+.name-padding:hover {
+    color: #fff;
 }
 .sidebar-list--name:hover {
     background-color: var(--linksColor);
@@ -84,7 +100,6 @@
     padding: 48px 70px 200px 71px;
     display: flex;
     gap: 130px;
-    flex-wrap: wrap;
 }
 .products-item--title {
     font-size: 48px;
@@ -145,8 +160,33 @@
     line-height: 16px;
 }
 
+@media (max-width: 1490px) {
+    .products {
+        margin: 0 20px;
+    }
+}
+@media (max-width: 1250px) {
+    .products-item {
+        padding: 48px 10px 200px 20px;
+        gap: 5px;
+    }
+    .products-item--list {
+        font-size: 12px;
+        max-width: 300px;
+    }
+    .products-item--char {
+        max-width: 250px;
+    }
+}
 
 @media (max-width: 930px) {
+    .document-image {
+        margin-top: 24px;
+        margin-bottom: 24px;
+    }
+    .products-item {
+        flex-wrap: wrap;
+    }
     .stages {
         padding-left: 30px;
     }
@@ -155,6 +195,11 @@
     }
     .sidebar-link {
         padding-left: 30px;
+        font-size: 13px;
+    }
+    .name-padding {
+        padding-left: 30px;
+        font-size: 13px;
     }
     .decor::before {
         left: 5px;
@@ -220,7 +265,7 @@
         height: 100%;
         top: 100px;
         left: 0;
-        position: fixed;
+        position: absolute;
         background-color: white;
         overflow: hidden;
         z-index: 10;
@@ -240,6 +285,9 @@
     .sidebar-list--name {
         margin-top: 24px;
     }
+    .name-padding {
+        padding: 0px 16px;
+    }
     .mobile-sidebar {
         display: none;
     }
@@ -255,6 +303,7 @@
         line-height: 16px;
         position: relative;
         padding-left: 40px;
+        padding-top: 8px;
     }
     .btn-back::before {
         content: url('../../images/Arrow_right.svg');
