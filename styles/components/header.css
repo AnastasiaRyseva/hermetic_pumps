@@ -79,6 +79,11 @@
 .lang-mobile--open {
     display: flex;
 }
+@media (max-width: 1490px) {
+    .header-items {
+        padding: 0 50px;
+    } 
+}
 @media (max-width: 605px) {
     .mobile-line {
         height: 1px;
